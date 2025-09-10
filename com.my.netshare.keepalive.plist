@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.my.netshare.keepalive</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/local/bin/netshare-keepalive.sh</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- alle 5 Minuten -->
+    <key>StartInterval</key>
+    <integer>300</integer>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/netshare-keepalive.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/netshare-keepalive.err</string>
+
+    <!-- Stellt sicher, dass es nur in der User-Session läuft -->
+    <key>LimitLoadToSessionType</key>
+    <array>
+      <string>Aqua</string>
+    </array>
+  </dict>
+</plist>
