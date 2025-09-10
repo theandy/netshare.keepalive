@@ -4,11 +4,14 @@ A simple Keep-Alive setup (script + LaunchAgent) that keeps your SMB
 share awake and automatically reconnects it if it gets disconnected. 
 You only need to adjust the placeholders.
 
+## Author: Andreas Löwer
+GitHub: [@theandy](https://github.com/theandy) · Mail: info@andreasloewer.de
+
 # Installation
 
 ## One-time: Save the password in Keychain
-Connect once via Finder (⌘K → smb://SERVER/SHARE) and check "Remember this password in my keychain."
-After that, the script can run without requiring a plaintext password.
+Connect once via Finder (⌘K → smb://SERVER/SHARE) and check "**Remember this password in my keychain.**"
+After that, the **script can run without requiring a plaintext password**.
 
 ## Create or copy the script
 Create a small Bash script that:
@@ -20,7 +23,7 @@ sudo mkdir -p /usr/local/bin
 sudo nano /usr/local/bin/netshare-keepalive.sh
 ```
 
-Copy the file netshare-keepalive.sh into the */usr/local/bin* folder and 
+Copy the file `netshare-keepalive.sh` into the */usr/local/bin* folder and 
 adjust the placeholders *SERVER*, *SHARE*, and *MY_SHARE*.
 If necessary, add user@ before *SERVER*.
 
