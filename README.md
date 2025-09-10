@@ -20,10 +20,11 @@ sudo mkdir -p /usr/local/bin
 sudo nano /usr/local/bin/netshare-keepalive.sh
 ```
 
-Copy the file netshare-keepalive.sh into the /usr/local/bin folder and adjust the placeholders SERVER, SHARE, and MY_SHARE.
-If necessary, add user@ before SERVER.
+Copy the file netshare-keepalive.sh into the */usr/local/bin* folder and 
+adjust the placeholders *SERVER*, *SHARE*, and *MY_SHARE*.
+If necessary, add user@ before *SERVER*.
 
-Important: Make the script executable: `sudo chmod +x /usr/local/bin/netshare-keepalive.sh`.
+**Important: Make the script executable:** `sudo chmod +x /usr/local/bin/netshare-keepalive.sh`.
 
 ## Create the LaunchAgent (every 5 minutes + at login)
 This agent runs the script at login and then every 5 minutes.
